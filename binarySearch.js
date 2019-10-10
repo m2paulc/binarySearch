@@ -5,7 +5,7 @@ function binarySearch(arrSorted, val) {
   //define the middle point to start the search
   let mid = Math.floor((left + right) / 2);
   //loop thru the array until target is found and starting point never reaches to the ending point
-  while (val !== arr[mid] && left <= right) {
+  while (val !== arrSorted[mid] && left <= right) {
     //see if target is less than the middle of the array to determine search (left or right)
     if (val < arrSorted[mid]) {
       right = mid - 1;
